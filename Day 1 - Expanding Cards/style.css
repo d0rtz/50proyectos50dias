@@ -1,0 +1,37 @@
+body {
+    margin-top: 70px;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    width: 100px;
+    height: 800px;
+    margin: 15px;
+    border-radius: 50px;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    text-align:left;
+    margin-top: 750px;
+    margin-left: 25px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.active {
+    width: 1200px;
+}
